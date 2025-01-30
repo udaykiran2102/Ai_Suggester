@@ -1,0 +1,226 @@
+*{
+    font-family: montserrat;
+}
+body{  
+    background-image: url(./images/bg.jpg);
+      /* Full height */
+      height: 100%;      
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.titles h2{
+	text-align: center;
+	color: black;
+	font-size: 85px;
+	  text-transform: capitalize;
+	  letter-spacing: 2px;
+	  margin-top: 25px;
+	  font-family: 'Moon Dance', cursive;
+  }
+.navbar-nav a {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+.navbar-light .navbar-brand {
+	color: #fff;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color: yellow;
+}
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+	background: #fff;
+}
+/*  carousel      */
+
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.bg-1 {
+	background-image: url(categoriesimg/healthcate.jpg);
+}
+.bg-1 {
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.carousel-caption {
+	bottom: 220px;
+	z-index: 2;
+}
+.carousel-caption h5 {
+	font-size: 85px;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	font-family: 'Moon Dance', cursive;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+.carousel-caption a {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 5px 20px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+	border-radius: 5px;
+}
+.carousel-inner:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 1;
+}
+.carousel-indicators {
+	bottom: 65px;
+}
+.carousel-indicators button {
+	width: 100px !important;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	.navbar-collapse {
+		background: #fff;
+	}
+	.navbar-collapse .nav-item .nav-link {
+		color: #000;
+	}
+	.carousel-caption {
+		bottom: 350px;
+	}
+	.carousel-caption h5 {
+		font-size: 65px;
+	}
+	.carousel-caption p {
+		font-size: 18px;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.navbar-nav {
+		text-align: center;
+	}
+	.navbar-collapse .nav-item .nav-link {
+		color: #000;
+	}
+	.carousel-caption {
+		bottom: 165px;
+	}
+	.carousel-caption h5 {
+		font-size: 25px;
+	}
+	.carousel-caption p {
+		font-size: 12px;
+		width: 100%;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	.navbar-collapse {
+		background: #fff;
+	}
+}
+
+
+
+.card {
+    background-image: url(./images/bg.jpg);
+    
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 30px;
+    
+}
+.card a {
+    position: relative; /* Make the link element relative for positioning */
+    display: block; /* Stretch the link to cover the entire card */
+    width: 100%; /* Set width to 100% for full coverage */
+    height: 100%; /* Set height to 100% for full coverage */
+    text-decoration: none; /* Remove underline from link text */
+    color: inherit; /* Inherit text color from parent element */
+  }
+
+
+  
+  .card-group{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+   }
+ 
+
+
+
+   
+
+
+.footer {
+    background-color: #181818;
+    padding: 40px 0;
+    color: #fff;
+}
+.footer a {
+    color: #bbb;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #fff;
+}
+.footer h5 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+.footer .social-buttons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.footer .social-buttons a:hover {
+    background-color: #444;
+    border-color: #ffcc00;
+}
+.footer .copy {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+}
+.footer .border-bottom {
+    border-bottom: 1px solid #444;
+    margin-bottom: 20px;
+}
