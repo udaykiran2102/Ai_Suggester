@@ -28,12 +28,6 @@
 
 ## 🎯 Project Objectives
 
-<div align="center">
-
-![Objectives](https://readme-typing-svg.herokuapp.com?font=Roboto&size=24&pause=1000&color=36BCF7&center=true&vCenter=true&width=500&lines=Our+Mission+%26+Vision)
-
-</div>
-
 - 🧠 **Intelligent Recommendations**: Provide AI-powered suggestions across diverse categories
 - 🎨 **User-Centric Design**: Create an intuitive interface for seamless user experience
 - 🌐 **Multi-Domain Support**: Cover various aspects of daily life and professional needs
@@ -41,12 +35,6 @@
 - 📈 **Scalable Architecture**: Build a robust system capable of handling multiple users
 
 ## 👥 Team Members
-
-<div align="center">
-
-![Team](https://readme-typing-svg.herokuapp.com?font=Roboto&size=28&pause=1000&color=FF6B6B&center=true&vCenter=true&width=400&lines=Meet+Our+Team)
-
-</div>
 
 ### 🚀 **Uday Kiran Neelam** - *Team Lead & Full Stack Developer & AI Developer*
 🌟 Leading the project with expertise in full-stack development and AI implementation. Responsible for project coordination, AI algorithm development, and machine learning integration.
@@ -59,23 +47,11 @@
 
 ## 🏫 Academic Information
 
-<div align="center">
-
-![Academic](https://readme-typing-svg.herokuapp.com?font=Roboto&size=26&pause=1000&color=4ECDC4&center=true&vCenter=true&width=450&lines=Academic+Excellence)
-
-</div>
-
 🎓 **Institution**: Computer Science & Engineering Department  
 📚 **Project Type**: Real-World Problem Solving Project  
 📅 **Academic Year**: 2nd Year, 2nd Semester  
 
 ### 👨‍🏫 Faculty & Administration
-
-<div align="center">
-
-![Faculty](https://readme-typing-svg.herokuapp.com?font=Roboto&size=22&pause=1000&color=95E1D3&center=true&vCenter=true&width=350&lines=Distinguished+Faculty)
-
-</div>
 
 - 🎯 **Project Guide**: Dr. Ravi Kumar (Professor & HOS-B)
 - 📋 **Project Coordinator**: Mr. B. R. Srinivas Rao (Associate Professor)
@@ -83,12 +59,6 @@
 - 🎓 **Dean CSE**: Dr. M.V. Vijaya Saradhi (Professor)
 
 ## 🏗️ Project Structure
-
-<div align="center">
-
-![Structure](https://readme-typing-svg.herokuapp.com?font=Roboto&size=24&pause=1000&color=F38BA8&center=true&vCenter=true&width=400&lines=Project+Architecture)
-
-</div>
 
 ```
 🤖 AI-Suggestor/
@@ -136,12 +106,6 @@
 
 ## ✨ Features
 
-<div align="center">
-
-![Features](https://readme-typing-svg.herokuapp.com?font=Roboto&size=26&pause=1000&color=FFD93D&center=true&vCenter=true&width=350&lines=Amazing+Features)
-
-</div>
-
 ### 🎨 Multi-Domain AI Suggestions
 - 💻 **Coding**: Programming language recommendations, code optimization tips
 - 📚 **Education**: Learning path suggestions, course recommendations
@@ -166,12 +130,6 @@
 
 ## 🛠️ Technology Stack
 
-<div align="center">
-
-![Tech Stack](https://readme-typing-svg.herokuapp.com?font=Roboto&size=24&pause=1000&color=6BCF7F&center=true&vCenter=true&width=400&lines=Technology+Stack)
-
-</div>
-
 ### 🎨 Frontend
 - 🏗️ **HTML5**: Structure and semantic markup
 - 🎨 **CSS3**: Styling and responsive design
@@ -187,12 +145,6 @@
 - 🔍 Browser developer tools for testing
 
 ## 🚀 Installation & Setup
-
-<div align="center">
-
-![Setup](https://readme-typing-svg.herokuapp.com?font=Roboto&size=22&pause=1000&color=A8DADC&center=true&vCenter=true&width=350&lines=Quick+Setup+Guide)
-
-</div>
 
 1. **📥 Clone the Repository**
    ```bash
@@ -216,12 +168,6 @@
 
 ## 📝 Usage Guide
 
-<div align="center">
-
-![Usage](https://readme-typing-svg.herokuapp.com?font=Roboto&size=20&pause=1000&color=F72585&center=true&vCenter=true&width=300&lines=How+to+Use)
-
-</div>
-
 1. 🏠 **Home Page**: Start from the main interface to explore available categories
 2. 📂 **Category Selection**: Choose from various AI suggestion domains
 3. 📝 **User Registration**: Create an account for personalized recommendations
@@ -229,12 +175,6 @@
 5. 🔍 **Explore Results**: Browse through suggested options and make informed decisions
 
 ## 🔮 Future Enhancements
-
-<div align="center">
-
-![Future](https://readme-typing-svg.herokuapp.com?font=Roboto&size=22&pause=1000&color=7209B7&center=true&vCenter=true&width=400&lines=Future+Roadmap)
-
-</div>
 
 - 🤖 Integration with machine learning APIs
 - 🧠 Advanced user preference learning
@@ -244,12 +184,6 @@
 - 📊 Advanced analytics and reporting
 
 ## 🤝 Contributing
-
-<div align="center">
-
-![Contributing](https://readme-typing-svg.herokuapp.com?font=Roboto&size=20&pause=1000&color=2A9D8F&center=true&vCenter=true&width=350&lines=Join+Our+Community)
-
-</div>
 
 We welcome contributions to improve AI-Suggestor! Please follow these steps:
 
@@ -264,12 +198,6 @@ We welcome contributions to improve AI-Suggestor! Please follow these steps:
 This project is developed as part of academic coursework and is intended for educational purposes.
 
 ## 📞 Contact Information
-
-<div align="center">
-
-![Contact](https://readme-typing-svg.herokuapp.com?font=Roboto&size=18&pause=1000&color=E76F51&center=true&vCenter=true&width=250&lines=Get+in+Touch)
-
-</div>
 
 For any queries or suggestions regarding this project:
 
