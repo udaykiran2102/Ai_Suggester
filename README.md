@@ -274,7 +274,6 @@ This project is developed as part of academic coursework and is intended for edu
 For any queries or suggestions regarding this project:
 
 - 🚀 **Team Lead**: Uday Kiran Neelam
-- 👨‍🏫 **Project Guide**: Dr. Ravi Kumar
 - 🏫 **Department**: Computer Science & Engineering
 
 ---
@@ -284,9 +283,5 @@ For any queries or suggestions regarding this project:
 ![Made with Love](https://readme-typing-svg.herokuapp.com?font=Roboto&size=16&pause=1000&color=FF69B4&center=true&vCenter=true&width=400&lines=Made+with+❤️+by+the+AI-Suggestor+Team)
 
 **🌟 Transforming ideas into intelligent solutions 🌟**
-
-![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fudaykiran2102%2Fai-suggestor&label=Visitors&countColor=%23263759&style=flat)
-![Stars](https://img.shields.io/github/stars/udaykiran2102/ai-suggestor?style=social)
-![Forks](https://img.shields.io/github/forks/udaykiran2102/ai-suggestor?style=social)
 
 </div>
