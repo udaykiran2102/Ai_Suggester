@@ -138,7 +138,7 @@ AI-Suggestor/
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/ai-suggestor.git
+   git clone https://github.com/udaykiran2102/ai-suggestor.git
    cd ai-suggestor
    ```
 
