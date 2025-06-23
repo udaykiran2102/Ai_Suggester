@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Suggester - Find the Perfect AI Tool</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-robot"></i>
+                <span>AI Suggester</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#categories" class="nav-link">Categories</a>
+                <a href="#about" class="nav-link">About</a>
+                <div class="auth-buttons">
+                    <button class="btn btn-outline" onclick="showLoginModal()">Login</button>
+                    <button class="btn btn-primary" onclick="showRegisterModal()">Sign Up</button>
+                </div>
+                <div class="user-menu" style="display: none;">
+                    <span class="user-name"></span>
+                    <button class="btn btn-outline" onclick="logout()">Logout</button>
+                </div>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Find the Perfect <span class="gradient-text">AI Tool</span> for Your Needs
+            </h1>
+            <p class="hero-subtitle">
+                Discover free AI tools tailored to your specific requirements. From video summarization to image generation, we've got you covered.
+            </p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        placeholder="What do you want to do? (e.g., summarize a YouTube video)"
+                        class="search-input"
+                    >
+                    <button class="search-btn" onclick="searchTools()">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="search-suggestions">
+                    <span class="suggestion-tag" onclick="setSearchQuery('summarize YouTube video')">Summarize YouTube video</span>
+                    <span class="suggestion-tag" onclick="setSearchQuery('generate images from text')">Generate images</span>
+                    <span class="suggestion-tag" onclick="setSearchQuery('code assistant')">Code assistant</span>
+                    <span class="suggestion-tag" onclick="setSearchQuery('text summarizer')">Text summarizer</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <div class="floating-card" style="top: 20%; left: 10%;">
+                <i class="fas fa-video"></i>
+                <span>Video AI</span>
+            </div>
+            <div class="floating-card" style="top: 30%; right: 15%;">
+                <i class="fas fa-image"></i>
+                <span>Image AI</span>
+            </div>
+            <div class="floating-card" style="bottom: 30%; left: 20%;">
+                <i class="fas fa-code"></i>
+                <span>Code AI</span>
+            </div>
+            <div class="floating-card" style="bottom: 20%; right: 10%;">
+                <i class="fas fa-file-text"></i>
+                <span>Text AI</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results -->
+    <section id="results" class="results-section" style="display: none;">
+        <div class="container">
+            <div class="results-header">
+                <h2>Recommended AI Tools</h2>
+                <p class="results-query"></p>
+            </div>
+            <div class="results-grid" id="resultsGrid">
+                <!-- Results will be populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore AI Tool Categories</h2>
+                <p>Browse our comprehensive collection of AI tools organized by category</p>
+            </div>
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- Categories will be populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tools -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured AI Tools</h2>
+                <p>Popular and highly-rated AI tools recommended by our community</p>
+            </div>
+            <div class="featured-grid">
+                <div class="tool-card featured">
+                    <div class="tool-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Transvribe</h3>
+                    <p>AI-powered YouTube video transcription and summarization</p>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-text">4.5/5</span>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Free</span>
+                        <span class="tag">Video</span>
+                    </div>
+                </div>
+                
+                <div class="tool-card featured">
+                    <div class="tool-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>BlueWillow</h3>
+                    <p>Free AI image generator for stunning artwork creation</p>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-text">4.4/5</span>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Free</span>
+                        <span class="tag">Image</span>
+                    </div>
+                </div>
+                
+                <div class="tool-card featured">
+                    <div class="tool-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>GitHub Copilot</h3>
+                    <p>AI pair programmer for faster code development</p>
+                    <div class="tool-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text">4.7/5</span>
+                    </div>
+                    <div class="tool-tags">
+                        <span class="tag">Free for Students</span>
+                        <span class="tag">Coding</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About AI Suggester</h2>
+                    <p>
+                        AI Suggester is your intelligent companion for discovering the perfect AI tools for any task. 
+                        Our platform uses advanced algorithms to understand your requirements and recommend the most 
+                        suitable free AI tools from our curated database.
+                    </p>
+                    <p>
+                        Whether you're a student, professional, or enthusiast, we help you find AI tools that can 
+                        enhance your productivity and creativity without breaking the bank.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>AI Tools</p>
+                        </div>
+                        <div class="stat">
+                            <h3>12</h3>
+                            <p>Categories</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10k+</h3>
+                            <p>Happy Users</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-graphic">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-robot"></i>
+                        <span>AI Suggester</span>
+                    </div>
+                    <p>Discover the perfect AI tools for your needs with intelligent recommendations.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#categories">Coding</a></li>
+                        <li><a href="#categories">Image</a></li>
+                        <li><a href="#categories">Video</a></li>
+                        <li><a href="#categories">Text</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Built with ❤️ by the AI Suggester Team</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Suggester. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Login</h2>
+                <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Login</button>
+            </form>
+            <p class="modal-footer">
+                Don't have an account? 
+                <a href="#" onclick="showRegisterModal(); closeModal('loginModal');">Sign up</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Sign Up</h2>
+                <span class="close" onclick="closeModal('registerModal')">&times;</span>
+            </div>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerUsername">Username</label>
+                    <input type="text" id="registerUsername" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Sign Up</button>
+            </form>
+            <p class="modal-footer">
+                Already have an account? 
+                <a href="#" onclick="showLoginModal(); closeModal('registerModal');">Login</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
